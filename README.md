@@ -16,14 +16,16 @@ To get started with the MovieStarPlanet2 Scammer Detection & Reporting API, foll
 pip install -r requirements.txt
 ```
    
-if you intend to start the server with a custom uvicorn command, remove the following block from your main script:
+if you intend to start the server with a custom uvicorn/daphne command, remove the following block from your main script:
 ```python
 if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app=app, host="127.0.0.1", port=8000)
+    import sys
+    from daphne.cli import CommandLineInterface
+
+    CommandLineInterface().run(["api:app"] + sys.argv[1:])
 ```
 
-Use a custom uvicorn command:
+Use a custom uvicorn/daphne command:
 ```bash
 uvicorn {script_name}:{app} --workers {NUM_WORKERS}
 ```
