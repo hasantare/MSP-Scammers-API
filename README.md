@@ -1,4 +1,6 @@
 ## Overview
+📌 Today, I am pleased to announce the publication of the code for my API. This will allow interested parties to track the progress of the project and enable other developers to create their own systems.
+
 The MovieStarPlanet2 Scammer Detection & Reporting API is a tool designed to identify and report scammers within the MovieStarPlanet2 game environment. This API utilizes verified reports from users to check if a particular user is engaging in fraudulent activities.
 
 ## Features
