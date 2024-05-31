@@ -1,4 +1,4 @@
-from mspscammers.hashing import create_sha1_hash
+from mspscammers.hashing import create_sha256_hash
 
 class AuthtokenManager(type):
     """
@@ -40,4 +40,4 @@ class AuthtokenManager(type):
         >>> AuthtokenManager.create_auth_token("1234567890")
         'e807f1fcf82d132f9bb018ca6738a19f0b0e6f89'
         """
-        return create_sha1_hash(discord_user_id)
+        return create_sha256_hash(discord_user_id)
