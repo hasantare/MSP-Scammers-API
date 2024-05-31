@@ -1,0 +1,8 @@
+aiosqlite
+uvicorn
+Py3AMF
+websockets
+httpx
+aiohttp
+requests
+blacksheep
